@@ -1,3 +1,9 @@
+import { connect } from "react-redux";
+
+const mapStateToProps = (state) => {
+  return { store: state };
+};
+
 const SinglePost = ({ posts }) => {
  
     const { img, title, author, id, category } = posts;
@@ -17,4 +23,4 @@ const SinglePost = ({ posts }) => {
   );
 };
 
-export default SinglePost;
+export default connect(mapStateToProps, null)(SinglePost)

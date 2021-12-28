@@ -10,9 +10,9 @@ const PostPage = () => {
 
     // console.log(useContentful())
 
-    useEffect(() => {
-    getPost().then((response) => setPosts(response));
-    });
+/*     useEffect(() => {
+      getPost().then((response) => setPosts(response));
+    }); */
 
     return (
       <>
@@ -21,8 +21,7 @@ const PostPage = () => {
         </header>
 
         <div className="container">
-            <SinglePost posts={posts}/>
-          >
+{/*             <SinglePost posts={posts}/> */}
         </div>
       </>
     );

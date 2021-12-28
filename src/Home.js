@@ -1,19 +1,31 @@
 import React from 'react';
 import PostCard from "./PostCard";
+import { useDispatch } from "react-redux";
+import {NOTICIES} from './redux/actionCreator.js'
 import useContentful from "./useContentful";
 import { useEffect, useState } from "react";
-
 
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
     const getAuthors = useContentful();
-
+    
+    const dispatch = useDispatch();
     // console.log(useContentful())
 
     useEffect(() => {
-    getAuthors().then((response) => setPosts(response));
-    });
+      
+      const fecthNotices = async () => {
+        await getAuthors().then((response) =>{
+          setPosts(response)
+          dispatch(NOTICIES(response))
+        }
+        );
+      }
+
+      fecthNotices();
+
+    }, []);
 
     return (
       <>
