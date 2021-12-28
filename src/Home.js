@@ -18,7 +18,12 @@ const Home = () => {
     return (
       <>
         <header className="App-header">
-          <h1>Un blog de tenis en react y contentful</h1>
+          <h1 className="text-3xl font-bold underline">
+            Un blog de tenis en react y contentful
+          </h1>
+          <button class="bg-cyan-500 shadow-lg shadow-cyan-500/50 p-2 m-4">
+            Subscribe
+          </button>
         </header>
         <div className="container">
           {" "}
