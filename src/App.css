@@ -1,21 +1,9 @@
-.App {
+/* .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+} */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +12,67 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container {
+  display: flex;
+  margin: 20px 0px;
+  width: 100%;
+  justify-content: center;
+}
+.card-container {
+  border: 1px solid black;
+  width: 400px;
+  margin: 0px 10px;
+  padding: 20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container img {
+  width: 400px;
+  height: 300px;
+
+}
+
+.card-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Nav */
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  align-items: center;
+    background-color: #282c34;
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.header-nav-list li {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+
+.HeroLink {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+ 
+.HeroLink a:hover  {
+  text-decoration: none;
+}
+
+.header-nav-list li:last-child a {
+  background-color: white;
+  color: black !important;
+  border-radius: 20px;
+  border: none;
+  padding: 20px 30px;
 }
