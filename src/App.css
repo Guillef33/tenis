@@ -76,3 +76,25 @@ nav {
   border: none;
   padding: 20px 30px;
 }
+
+/* Footer */
+
+
+footer {
+  background-color: #282c34;
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 2rem 5rem;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer div h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
