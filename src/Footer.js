@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footerContainer">
       <div>
         <h3>
-          Libreria independiente con textos en ingles. Importador oficial{" "}
+          Blog de tenis y noticias deportivas
         </h3>
       </div>
 
